@@ -1,7 +1,7 @@
 package Inheritance;
 
 public class Vehicle {
-    public String name ;
+     String name ;
     public String model;
     public int noOfTair;
     Vehicle(String name,String model,int noOfTair){

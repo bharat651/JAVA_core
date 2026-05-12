@@ -15,7 +15,7 @@ public class Car extends Vehicle{
         System.out.println(this.name+" "+this.model+" \nNo Of Tairs: "+this.noOfTair+" \nNo Of Doors: "+this.noOfDoors+" \nIt Have "+this.milage+" Milage");
     }
 
-    public static void main(String[]args){
+     static void main(){
         Car c = new Car("Audi","A4",4,6,10);
         c.startEngine();
         c.startCar();
