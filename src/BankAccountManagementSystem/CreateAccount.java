@@ -8,17 +8,28 @@ public class CreateAccount {
     private String lastname;
     private int age;
     private String city;
+    Scanner input = new Scanner(System.in);
+    public CreateAccount(){
 
-    public CreateAccount(){}
+        System.out.println("Enter Your First Name");
+        setFirstName(input.nextLine());
+        System.out.println("Enter Your Last Name");
+        setLastName(input.nextLine());
+        System.out.println("Enter Your Age");
+        setAge(input.nextInt());
+        System.out.println("Enter Your City");
+        input.nextLine();
+        setCity(input.nextLine());
+    }
 
     public void setFirstName(String firstname){
-        this.firstname = firstname;
+        this.firstname = firstname.trim();
     }
     public void setLastName(String lastname){
-        this.lastname = lastname;
+        this.lastname = lastname.trim();
     }
     public String getName(){
-        return firstname+" "+lastname;
+        return(firstname+" "+lastname);
     }
     public void setAge(int age){
         if(age<100 && age>1){
@@ -26,6 +37,7 @@ public class CreateAccount {
         }
         else{
             System.out.println("Enter valid age");
+            setAge(input.nextInt());
         }
     }
     public int getAge(){
@@ -37,8 +49,11 @@ public class CreateAccount {
     public String getCity(){
         return city;
     }
-
-
+    public void getDetails(){
+        System.out.println("Name: "+getName());
+        System.out.println("Age: "+getAge());
+        System.out.println("City: "+getCity());
+    }
 
 
 
