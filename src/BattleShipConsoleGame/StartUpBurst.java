@@ -8,9 +8,9 @@ public class StartUpBurst {
         StartUp one = new StartUp();
         one.setName("Apple");
         StartUp two = new StartUp();
-        two.setName("Apple");
+        two.setName("Samsung");
         StartUp three = new StartUp();
-        three.setName("Apple");
+        three.setName("Realme");
         startups.add(one);
         startups.add(two);
         startups.add(three);

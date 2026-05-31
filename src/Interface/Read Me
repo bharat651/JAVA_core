@@ -1,0 +1,13 @@
+interface use for achive 100% abstraction
+interface have abstract method
+in interface all method already public and abstract
+we cant create object of interface
+we can inharite the interface using implements keyword
+*type of inheritance
+1.Normal Interface
+->it is the normal interface
+-> it have multiple abstract method
+2.Functional Interface/SAM(Single Abstract Method)
+-> it have only one abstract method
+3.Marker Interface
+->it dont have method

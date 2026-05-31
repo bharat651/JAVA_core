@@ -1,23 +1,28 @@
 package Interface;
-interface Car{
-    //in interface all variable are final
-    int age=0;
-    //in interface every method is public abstract
-    void drive();
+interface Computer{
+    void code();
 }
-class Audi implements Car {
-
-    public void drive() {
-        System.out.println("Driving");
+class Laptop implements Computer{
+    public void code(){
+        System.out.println("Coding in Laptop");
+    }
+}
+class Desktop implements Computer{
+    public void code(){
+        System.out.println("Coding in Desktop");
+    }
+}
+class Dev{
+    public void develop(Computer C){
+        C.code();
+        System.out.println("developing....");
     }
 }
 public class Demo {
-    public static void main(String[]args){
-        Car c = new Audi(){
-            public void drive(){
-                System.out.println("hide drive");
-            }
-        };
-        c.drive();
+    public static void main(String[]a){
+        Dev d = new Dev();
+        Computer lap = new Laptop();
+        Computer des = new Desktop();
+        d.develop(lap);
     }
 }
